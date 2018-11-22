@@ -48,6 +48,7 @@ public class Benchmark
     /// Number of times to run the methods in each type.
     /// </summary>
     static int runIterations = 1;
+    static bool pause = false;
 
     public static void Main(string[] args)
     {
@@ -176,6 +177,12 @@ public class Benchmark
                     }
                 }
             }
+
+            if (pause)
+            {
+                Console.WriteLine("Press ENTER to continue . . .");
+                Console.ReadLine();
+            }
         }
     }
 
@@ -202,6 +209,10 @@ public class Benchmark
 
                 case "-version":
                     PrintEnvironment();
+                    break;
+
+                case "-pause":
+                    pause = true;
                     break;
 
                 case "-endoptions":
