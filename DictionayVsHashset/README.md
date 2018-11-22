@@ -2,7 +2,7 @@
 
 This is a benchmark project to verify the performance difference between using .NET _Hashset<string>_ or _Dictionary<string, bool>_.
 
-Obviously, both structures are different, but in theory it should not be big performance differences creating then and neither accessing items. Since there was an issue, we want to validate that hypothesis.
+Obviously, both structures are different, but in theory it should not be big performance differences creating them and neither accessing items. Since there was an issue, we want to validate that hypothesis.
 
 Thanks @jskeet, we are using his _[micro-benchmarks micro-framework](http://www.pobox.com/~skeet/csharp/benchmark.html)_.
 
